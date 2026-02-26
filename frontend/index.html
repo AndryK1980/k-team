@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="K-Team — разработка сайтов, мобильных приложений и SEO-продвижение. Превращаем идеи в цифровые продукты.">
+  <title>K-Team — Веб-разработка, приложения и SEO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__k">K</span><span class="logo__dash">-</span><span class="logo__team">Team</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#about" class="nav__link">О нас</a></li>
+          <li><a href="#workflow" class="nav__link">Как мы работаем</a></li>
+          <li><a href="#contact" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn--header">Обсудить проект</a>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Создаём <span class="gradient-text">цифровые продукты</span>, которые работают на ваш бизнес
+        </h1>
+        <p class="hero__subtitle">
+          Разработка сайтов, мобильных приложений и SEO-продвижение. Комплексный подход от идеи до результата.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Оставить заявку</a>
+          <a href="#services" class="btn btn--outline btn--lg">Наши услуги</a>
+        </div>
+        <div class="hero__stats">
+          <div class="stat">
+            <span class="stat__number" data-count="50">0</span><span class="stat__plus">+</span>
+            <span class="stat__label">Проектов</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="30">0</span><span class="stat__plus">+</span>
+            <span class="stat__label">Клиентов</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number" data-count="5">0</span>
+            <span class="stat__label">Лет опыта</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__shape hero__shape--1"></div>
+        <div class="hero__shape hero__shape--2"></div>
+        <div class="hero__shape hero__shape--3"></div>
+        <div class="hero__code">
+          <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">project</span> = <span class="code-keyword">await</span> <span class="code-func">createProject</span>({</div>
+          <div class="code-line">&nbsp;&nbsp;team: <span class="code-string">'K-Team'</span>,</div>
+          <div class="code-line">&nbsp;&nbsp;quality: <span class="code-string">'exceptional'</span>,</div>
+          <div class="code-line">&nbsp;&nbsp;deadline: <span class="code-string">'on-time'</span></div>
+          <div class="code-line">});</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Услуги</span>
+        <h2 class="section-title">Что мы делаем</h2>
+        <p class="section-subtitle">Полный цикл цифровых услуг для развития вашего бизнеса</p>
+      </div>
+      <div class="services__grid">
+        <div class="service-card" data-aos="fade-up">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="8" width="40" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M4 16H44" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="10" cy="12" r="1.5" fill="currentColor"/>
+              <circle cx="15" cy="12" r="1.5" fill="currentColor"/>
+              <circle cx="20" cy="12" r="1.5" fill="currentColor"/>
+              <path d="M16 40H32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 36V40" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M17 25L21 29L17 33" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M25 33H31" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Разработка сайтов</h3>
+          <p class="service-card__text">
+            Лендинги, корпоративные сайты, интернет-магазины и веб-порталы. Адаптивный дизайн, высокая скорость загрузки, удобство использования.
+          </p>
+          <ul class="service-card__tags">
+            <li>Лендинги</li>
+            <li>Корпоративные сайты</li>
+            <li>Интернет-магазины</li>
+            <li>CRM-системы</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="14" y="4" width="20" height="40" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M14 10H34" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M14 36H34" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="40" r="2" fill="currentColor"/>
+              <rect x="20" y="18" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 14V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 28V30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">Мобильные приложения</h3>
+          <p class="service-card__text">
+            Нативные и кроссплатформенные приложения для iOS и Android. От идеи до публикации в App Store и Google Play.
+          </p>
+          <ul class="service-card__tags">
+            <li>iOS</li>
+            <li>Android</li>
+            <li>Кроссплатформа</li>
+            <li>UI/UX дизайн</li>
+          </ul>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 4C24 4 32 14 32 24C32 34 24 44 24 44" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 4C24 4 16 14 16 24C16 34 24 44 24 44" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M6 18H42" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M6 30H42" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M12 10L20 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M36 10L28 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title">SEO-продвижение</h3>
+          <p class="service-card__text">
+            Комплексное продвижение в поисковых системах. Рост органического трафика, улучшение позиций и увеличение конверсии.
+          </p>
+          <ul class="service-card__tags">
+            <li>Аудит сайта</li>
+            <li>Оптимизация</li>
+            <li>Контент-стратегия</li>
+            <li>Аналитика</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">О компании</span>
+        <h2 class="section-title">Почему K-Team?</h2>
+        <p class="section-subtitle">Мы — команда профессионалов, которая создаёт технологичные решения</p>
+      </div>
+      <div class="about__grid">
+        <div class="about-card">
+          <div class="about-card__number">01</div>
+          <h3 class="about-card__title">Индивидуальный подход</h3>
+          <p class="about-card__text">Каждый проект уникален. Мы глубоко погружаемся в бизнес клиента и предлагаем решения, которые решают конкретные задачи.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__number">02</div>
+          <h3 class="about-card__title">Прозрачный процесс</h3>
+          <p class="about-card__text">Регулярные отчёты, доступ к системе управления проектом и постоянная связь с менеджером на каждом этапе.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__number">03</div>
+          <h3 class="about-card__title">Современные технологии</h3>
+          <p class="about-card__text">Используем актуальные инструменты и фреймворки, чтобы ваш продукт был быстрым, надёжным и масштабируемым.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-card__number">04</div>
+          <h3 class="about-card__title">Поддержка после запуска</h3>
+          <p class="about-card__text">Не бросаем проект после сдачи. Техническая поддержка, обновления и развитие — мы всегда на связи.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow -->
+  <section class="workflow" id="workflow">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Процесс</span>
+        <h2 class="section-title">Как мы работаем</h2>
+        <p class="section-subtitle">От идеи до готового продукта за 4 простых шага</p>
+      </div>
+      <div class="workflow__steps">
+        <div class="step">
+          <div class="step__icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C9.37 4 4 9.37 4 16s5.37 12 12 12 12-5.37 12-12S22.63 4 16 4z" stroke="currentColor" stroke-width="2"/><path d="M12 16h8M16 12v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step__content">
+            <span class="step__number">Шаг 1</span>
+            <h3 class="step__title">Заявка и консультация</h3>
+            <p class="step__text">Вы оставляете заявку, мы связываемся, обсуждаем задачу и цели проекта.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__icon">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="6" y="6" width="20" height="20" rx="3" stroke="currentColor" stroke-width="2"/><path d="M6 12h20" stroke="currentColor" stroke-width="2"/><path d="M12 12v14" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="step__content">
+            <span class="step__number">Шаг 2</span>
+            <h3 class="step__title">Проектирование</h3>
+            <p class="step__text">Создаём прототипы, дизайн и техническое задание. Утверждаем с вами каждый этап.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M10 8l-6 8 6 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 8l6 8-6 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 6l-4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="step__content">
+            <span class="step__number">Шаг 3</span>
+            <h3 class="step__title">Разработка</h3>
+            <p class="step__text">Пишем код, тестируем, показываем промежуточные результаты и вносим правки.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__icon">
+            <svg viewBox="0 0 32 32" fill="none"><path d="M28 9L13 24l-7-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="step__content">
+            <span class="step__number">Шаг 4</span>
+            <h3 class="step__title">Запуск и поддержка</h3>
+            <p class="step__text">Запускаем проект, обучаем вашу команду и обеспечиваем дальнейшую поддержку.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Контакты</span>
+        <h2 class="section-title">Обсудим ваш проект?</h2>
+        <p class="section-subtitle">Заполните форму и мы свяжемся с вами в течение 30 минут</p>
+      </div>
+      <div class="contact__inner">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Ваше имя</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Как к вам обращаться?" required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone" class="form-label">Телефон</label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 (900) 123-45-67">
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="mail@example.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service" class="form-label">Какая услуга интересует?</label>
+            <select id="service" name="service" class="form-input form-select">
+              <option value="" disabled selected>Выберите услугу</option>
+              <option value="website">Разработка сайта</option>
+              <option value="app">Мобильное приложение</option>
+              <option value="seo">SEO-продвижение</option>
+              <option value="complex">Комплексное решение</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Расскажите о проекте</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Опишите вашу задачу, бюджет и сроки..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">
+            <span class="btn__text">Отправить заявку</span>
+            <span class="btn__loader" hidden>
+              <svg class="spinner" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="30 70"/></svg>
+            </span>
+          </button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+        </form>
+        <div class="contact__info">
+          <div class="contact-block">
+            <h3 class="contact-block__title">Свяжитесь с нами</h3>
+            <p class="contact-block__text">Предпочитаете написать напрямую? Мы всегда на связи в Telegram.</p>
+            <a href="https://t.me/k_team" class="btn btn--telegram" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.03-1.99 1.27-5.62 3.72-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.06-.49-.83-.27-1.49-.42-1.43-.88.03-.24.37-.49 1.02-.74 3.99-1.74 6.65-2.89 7.99-3.44 3.81-1.58 4.6-1.86 5.12-1.87.11 0 .37.03.54.17.14.12.18.28.2.45-.01.06.01.24 0 .38z"/></svg>
+              Написать в Telegram
+            </a>
+          </div>
+          <div class="contact-block">
+            <h3 class="contact-block__title">Быстрый ответ</h3>
+            <div class="response-features">
+              <div class="response-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                <span>Ответ за 30 минут</span>
+              </div>
+              <div class="response-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Бесплатная консультация</span>
+              </div>
+              <div class="response-feature">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>NDA по запросу</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__k">K</span><span class="logo__dash">-</span><span class="logo__team">Team</span>
+        </a>
+        <p class="footer__desc">Разработка цифровых продуктов для вашего бизнеса</p>
+      </div>
+      <div class="footer__links">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="#services">Разработка сайтов</a></li>
+          <li><a href="#services">Мобильные приложения</a></li>
+          <li><a href="#services">SEO-продвижение</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Компания</h4>
+        <ul>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#workflow">Как мы работаем</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 K-Team. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast">
+    <div class="toast__content">
+      <svg class="toast__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <span class="toast__message" id="toastMessage"></span>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
