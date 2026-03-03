@@ -10,8 +10,8 @@
  * 3. Fill in the values below.
  */
 
-define('TELEGRAM_BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE');
-define('TELEGRAM_CHAT_ID', 'YOUR_CHAT_ID_HERE');
+define('TELEGRAM_BOT_TOKEN', '8792103695:AAGAp5U5lOSrdWScEZeRRCIcHL8scT790js');
+define('TELEGRAM_CHAT_ID', '-1003762511856');
 
 $allowed_origins = [
     'http://localhost',

@@ -249,6 +249,8 @@ textarea {
 /* ============================
    Header
    ============================ */
+/* backdrop-filter вынесен в ::before, чтобы не создавать containing block
+   для position:fixed у nav (бургер-меню на мобильных) */
 .header {
   position: fixed;
   top: 0;
@@ -256,15 +258,27 @@ textarea {
   right: 0;
   z-index: 1000;
   height: var(--header-height);
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition), background-color var(--transition);
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
   background: rgba(10, 10, 15, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid transparent;
-  transition: all var(--transition);
+  z-index: -1;
+  transition: background-color var(--transition);
 }
 
 .header--scrolled {
   border-bottom-color: var(--color-border);
+}
+
+.header--scrolled::before {
   background: rgba(10, 10, 15, 0.95);
 }
 
@@ -1034,20 +1048,26 @@ textarea {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
     background: rgba(10, 10, 15, 0.98);
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition);
-    z-index: 1000;
+    z-index: 1001;
+    pointer-events: none;
   }
 
   .nav--open {
     opacity: 1;
     visibility: visible;
+    pointer-events: auto;
   }
 
   .nav__list {
