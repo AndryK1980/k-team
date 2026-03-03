@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  if (typeof initI18n === 'function') initI18n();
   initHeader();
   initBurger();
   initCounters();
@@ -112,10 +113,13 @@ function initPhoneMask() {
   const phone = document.getElementById('phone');
 
   phone.addEventListener('focus', () => {
-    if (!phone.value) phone.value = '+7 ';
+    if (!phone.value && typeof getLang === 'function' && getLang() === 'ru') {
+      phone.value = '+7 ';
+    }
   });
 
   phone.addEventListener('input', (e) => {
+    if (typeof getLang === 'function' && getLang() === 'en') return; /* No mask for EN */
     const cursorWasAtEnd = phone.selectionStart === phone.value.length;
     phone.value = formatPhone(phone.value);
     if (cursorWasAtEnd) {
@@ -124,6 +128,7 @@ function initPhoneMask() {
   });
 
   phone.addEventListener('keydown', (e) => {
+    if (typeof getLang === 'function' && getLang() === 'en') return;
     const raw = phone.value.replace(/\D/g, '');
     if (e.key === 'Backspace' && raw.length <= 1) {
       e.preventDefault();
@@ -132,11 +137,13 @@ function initPhoneMask() {
   });
 
   phone.addEventListener('blur', () => {
+    if (typeof getLang === 'function' && getLang() === 'en') return;
     const raw = phone.value.replace(/\D/g, '');
     if (raw.length <= 1) phone.value = '';
   });
 
   phone.addEventListener('paste', (e) => {
+    if (typeof getLang === 'function' && getLang() === 'en') return;
     e.preventDefault();
     const paste = (e.clipboardData || window.clipboardData).getData('text');
     phone.value = formatPhone(paste);
@@ -168,7 +175,9 @@ function formatPhone(value) {
 
 function isValidPhone(value) {
   const digits = value.replace(/\D/g, '');
-  return digits.length === 11 && digits.startsWith('7');
+  if (digits.length >= 10 && digits.startsWith('7')) return true;
+  if (digits.length >= 10) return true; /* International */
+  return false;
 }
 
 /* ============================
@@ -198,13 +207,15 @@ function initContactForm() {
       const result = await response.json();
 
       if (result.success) {
-        showToast('Заявка отправлена! Мы свяжемся с вами в ближайшее время.', 'success');
+        showToast(typeof getTranslations === 'function' ? getTranslations(getLang()).toast.success : 'Заявка отправлена! Мы свяжемся с вами в ближайшее время.', 'success');
         form.reset();
       } else {
-        showToast(result.message || 'Произошла ошибка. Попробуйте позже.', 'error');
+        const t = typeof getTranslations === 'function' ? getTranslations(getLang()).toast : null;
+        showToast(result.message || (t ? t.errorDefault : 'Произошла ошибка. Попробуйте позже.'), 'error');
       }
     } catch {
-      showToast('Ошибка сети. Проверьте подключение и попробуйте снова.', 'error');
+      const t = typeof getTranslations === 'function' ? getTranslations(getLang()).toast : null;
+      showToast(t ? t.errorNetwork : 'Ошибка сети. Проверьте подключение и попробуйте снова.', 'error');
     } finally {
       setLoading(false);
     }
@@ -222,26 +233,29 @@ function validateForm(form) {
   const phone = form.querySelector('#phone');
   const email = form.querySelector('#email');
 
+  const t = typeof getTranslations === 'function' ? getTranslations(getLang()).toast : null;
+  const msg = (key, fallback) => (t && t[key]) || fallback;
+
   if (!name.value.trim()) {
-    showToast('Пожалуйста, введите ваше имя', 'error');
+    showToast(msg('validateName', 'Пожалуйста, введите ваше имя'), 'error');
     name.focus();
     return false;
   }
 
   if (!phone.value.trim() && !email.value.trim()) {
-    showToast('Укажите телефон или email для связи', 'error');
+    showToast(msg('validateContact', 'Укажите телефон или email для связи'), 'error');
     phone.focus();
     return false;
   }
 
   if (phone.value.trim() && !isValidPhone(phone.value)) {
-    showToast('Введите корректный номер телефона', 'error');
+    showToast(msg('validatePhone', 'Введите корректный номер телефона'), 'error');
     phone.focus();
     return false;
   }
 
   if (email.value.trim() && !isValidEmail(email.value)) {
-    showToast('Введите корректный email', 'error');
+    showToast(msg('validateEmail', 'Введите корректный email'), 'error');
     email.focus();
     return false;
   }
