@@ -1,0 +1,6 @@
+# https://webk-it.ru/robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://webk-it.ru/sitemap.xml
