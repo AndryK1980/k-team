@@ -197,12 +197,17 @@ function initContactForm() {
     setLoading(true);
 
     const formData = new FormData(form);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 15000);
 
     try {
       const response = await fetch('/backend/send-telegram.php', {
         method: 'POST',
         body: formData,
+        signal: controller.signal,
       });
+
+      clearTimeout(timeoutId);
 
       const result = await response.json();
 
@@ -213,10 +218,15 @@ function initContactForm() {
         const t = typeof getTranslations === 'function' ? getTranslations(getLang()).toast : null;
         showToast(result.message || (t ? t.errorDefault : 'Произошла ошибка. Попробуйте позже.'), 'error');
       }
-    } catch {
+    } catch (err) {
+      clearTimeout(timeoutId);
       const t = typeof getTranslations === 'function' ? getTranslations(getLang()).toast : null;
-      showToast(t ? t.errorNetwork : 'Ошибка сети. Проверьте подключение и попробуйте снова.', 'error');
+      const msg = err.name === 'AbortError'
+        ? (t ? t.errorTimeout : 'Превышено время ожидания. Попробуйте позже.')
+        : (t ? t.errorNetwork : 'Ошибка сети. Проверьте подключение и попробуйте снова.');
+      showToast(msg, 'error');
     } finally {
+      clearTimeout(timeoutId);
       setLoading(false);
     }
   });
