@@ -5,8 +5,8 @@
 const TRANSLATIONS = {
   ru: {
     meta: {
-      description: 'K-Team — разработка сайтов, мобильных приложений и SEO-продвижение. Превращаем идеи в цифровые продукты.',
-      title: 'K-Team — Веб-разработка, приложения и SEO',
+      description: 'WebK — разработка сайтов, мобильных приложений и SEO-продвижение. Превращаем идеи в цифровые продукты.',
+      title: 'WebK — Веб-разработка, приложения и SEO',
     },
     nav: {
       services: 'Услуги',
@@ -49,7 +49,7 @@ const TRANSLATIONS = {
     },
     about: {
       tag: 'О компании',
-      title: 'Почему K-Team?',
+      title: 'Почему WebK?',
       subtitle: 'Мы — команда профессионалов, которая создаёт технологичные решения',
       card1: { title: 'Индивидуальный подход', text: 'Каждый проект уникален. Мы глубоко погружаемся в бизнес клиента и предлагаем решения, которые решают конкретные задачи.' },
       card2: { title: 'Прозрачный процесс', text: 'Регулярные отчёты, доступ к системе управления проектом и постоянная связь с менеджером на каждом этапе.' },
@@ -103,12 +103,13 @@ const TRANSLATIONS = {
       about: 'О нас',
       workflow: 'Как мы работаем',
       contact: 'Контакты',
-      rights: '© 2026 K-Team. Все права защищены.',
+      rights: '© 2026 WebK. Все права защищены.',
     },
     toast: {
       success: 'Заявка отправлена! Мы свяжемся с вами в ближайшее время.',
       errorDefault: 'Произошла ошибка. Попробуйте позже.',
       errorNetwork: 'Ошибка сети. Проверьте подключение и попробуйте снова.',
+      errorTimeout: 'Превышено время ожидания. Попробуйте позже.',
       validateName: 'Пожалуйста, введите ваше имя',
       validateContact: 'Укажите телефон или email для связи',
       validatePhone: 'Введите корректный номер телефона',
@@ -117,8 +118,8 @@ const TRANSLATIONS = {
   },
   en: {
     meta: {
-      description: 'K-Team — website development, mobile apps, and SEO. We turn ideas into digital products.',
-      title: 'K-Team — Web Development, Apps & SEO',
+      description: 'WebK — website development, mobile apps, and SEO. We turn ideas into digital products.',
+      title: 'WebK — Web Development, Apps & SEO',
     },
     nav: {
       services: 'Services',
@@ -161,7 +162,7 @@ const TRANSLATIONS = {
     },
     about: {
       tag: 'About company',
-      title: 'Why K-Team?',
+      title: 'Why WebK?',
       subtitle: 'We are a team of professionals who create tech-driven solutions',
       card1: { title: 'Individual approach', text: 'Every project is unique. We dive deep into the client\'s business and deliver solutions that solve real challenges.' },
       card2: { title: 'Transparent process', text: 'Regular reports, project management access, and continuous contact with your manager at every stage.' },
@@ -215,12 +216,13 @@ const TRANSLATIONS = {
       about: 'About us',
       workflow: 'How we work',
       contact: 'Contact',
-      rights: '© 2026 K-Team. All rights reserved.',
+      rights: '© 2026 WebK. All rights reserved.',
     },
     toast: {
       success: 'Request sent! We\'ll get back to you shortly.',
       errorDefault: 'Something went wrong. Please try again.',
       errorNetwork: 'Network error. Check your connection and try again.',
+      errorTimeout: 'Request timeout. Please try again later.',
       validateName: 'Please enter your name',
       validateContact: 'Provide a phone number or email',
       validatePhone: 'Enter a valid phone number',

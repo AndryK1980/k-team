@@ -295,19 +295,95 @@ textarea {
   display: flex;
   align-items: center;
   z-index: 1001;
+  min-width: 3.5em; /* fixed width to prevent layout shift during animation */
+}
+
+.logo__w {
+  color: var(--color-primary-light);
+}
+
+.logo__mid {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.1em;
+}
+
+.logo__eb {
+  display: inline-block;
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.logo__caret {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-accent);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .logo__k {
   color: var(--color-primary-light);
 }
 
-.logo__dash {
-  color: var(--color-text-muted);
-  margin: 0 1px;
+/* WebK → W^K logo animation (runs once on load) */
+.logo--animated {
+  gap: 0.12em;
+  animation: logoConverge 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
-.logo__team {
-  color: var(--color-text);
+.logo--animated .logo__w {
+  animation: logoWMargin 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.logo--animated .logo__k {
+  animation: logoKMargin 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.logo--animated .logo__mid {
+  animation: logoMidShrink 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s forwards;
+}
+
+.logo--animated .logo__eb {
+  animation: logoEbOut 0.7s ease-out 0.2s forwards;
+}
+
+.logo--animated .logo__caret {
+  animation: logoCaretIn 0.6s ease-out 0.5s forwards;
+}
+
+@keyframes logoConverge {
+  from { gap: 0.2em; }
+  to { gap: 0; }
+}
+
+@keyframes logoWMargin {
+  to { margin-right: -0.12em; }
+}
+
+@keyframes logoKMargin {
+  to { margin-left: -0.12em; }
+}
+
+@keyframes logoMidShrink {
+  from { min-width: 1.1em; }
+  to { min-width: 0.28em; }
+}
+
+@keyframes logoEbOut {
+  to {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+
+@keyframes logoCaretIn {
+  to {
+    opacity: 1;
+  }
 }
 
 .header__actions {
