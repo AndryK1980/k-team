@@ -1,6 +1,39 @@
-# https://webk-it.ru/robots.txt
+# Основные правила для всех роботов
 User-agent: *
-Allow: /
+Disallow: /assets/            # Папка с картинками, CSS, JS - не индексируем
+Disallow: /js/                # Скрипты
+Disallow: /css/               # Стили
+Disallow: /fonts/             # Шрифты
 
-# Sitemap
+# Запрещаем индексацию служебных страниц (если они есть в будущем)
+# Disallow: /admin/
+# Disallow: /thanks/
+# Disallow: /404.html
+
+# Указываем главное зеркало сайта (без www)
+Host: https://webk-it.ru
+
+# Карта сайта (sitemap)
 Sitemap: https://webk-it.ru/sitemap.xml
+
+# ------------------------------------------------------------
+# Правила для Yandex (особое внимание зеркалу и региону)
+User-agent: Yandex
+Disallow: /assets/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+
+# Указываем главное зеркало для Яндекса
+Host: https://webk-it.ru
+
+# Указываем регион сайта (Россия)
+Yandex: https://webk-it.ru/region?r=ru
+
+# ------------------------------------------------------------
+# Правила для Google (аналогично)
+User-agent: Googlebot
+Disallow: /assets/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
