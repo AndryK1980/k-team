@@ -120,7 +120,7 @@ textarea {
 
 .section-header {
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 48px;
 }
 
 .section-tag {
@@ -515,9 +515,9 @@ textarea {
 .hero__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  gap: 48px;
   align-items: center;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 .hero__title {
@@ -538,7 +538,7 @@ textarea {
 .hero__actions {
   display: flex;
   gap: 16px;
-  margin-bottom: 56px;
+  margin-bottom: 40px;
   flex-wrap: wrap;
 }
 
@@ -647,13 +647,13 @@ textarea {
    Services
    ============================ */
 .services {
-  padding: 120px 0;
+  padding: 80px 0;
   background: var(--color-bg-secondary);
 }
 
 .services__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 32px;
 }
 
@@ -740,7 +740,7 @@ textarea {
    About
    ============================ */
 .about {
-  padding: 120px 0;
+  padding: 80px 0;
   background: var(--color-bg);
 }
 
@@ -791,7 +791,7 @@ textarea {
    Workflow
    ============================ */
 .workflow {
-  padding: 120px 0;
+  padding: 80px 0;
   background: var(--color-bg-secondary);
 }
 
@@ -814,7 +814,7 @@ textarea {
 .step {
   display: flex;
   gap: 32px;
-  padding-bottom: 48px;
+  padding-bottom: 40px;
   position: relative;
 }
 
@@ -875,17 +875,83 @@ textarea {
 }
 
 /* ============================
+   FAQ
+   ============================ */
+.faq {
+  padding: 80px 0;
+  background: var(--color-bg);
+}
+
+.faq__list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.faq__item {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.faq__item:last-child {
+  margin-bottom: 0;
+}
+
+.faq__question {
+  padding: 24px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background var(--transition);
+}
+
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq__question::before {
+  content: '+';
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--color-primary-light);
+  flex-shrink: 0;
+}
+
+.faq__item[open] .faq__question::before {
+  content: '−';
+}
+
+.faq__question:hover {
+  background: var(--color-bg-card-hover);
+}
+
+.faq__answer {
+  padding: 20px 28px 24px;
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ============================
    Contact
    ============================ */
 .contact {
-  padding: 120px 0;
-  background: var(--color-bg);
+  padding: 80px 0;
+  background: var(--color-bg-secondary);
 }
 
 .contact__inner {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  gap: 64px;
+  gap: 48px;
   align-items: start;
 }
 
@@ -1009,7 +1075,7 @@ textarea {
 .footer {
   background: var(--color-bg-secondary);
   border-top: 1px solid var(--color-border);
-  padding: 64px 0 32px;
+  padding: 48px 0 32px;
 }
 
 .footer__inner {
@@ -1274,14 +1340,15 @@ textarea {
   }
 
   .section-header {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
   }
 
   .services,
   .about,
   .workflow,
+  .faq,
   .contact {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 }
 

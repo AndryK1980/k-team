@@ -87,7 +87,7 @@ function animateCounter(el) {
    ============================ */
 function initScrollReveal() {
   const revealElements = document.querySelectorAll(
-    '.service-card, .about-card, .step, .contact-form, .contact-block'
+    '.service-card, .about-card, .step, .faq__item, .contact-form, .contact-block'
   );
 
   revealElements.forEach(el => el.classList.add('reveal'));

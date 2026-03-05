@@ -1,9 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Главная страница (приоритет максимальный) -->
   <url>
     <loc>https://webk-it.ru/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webk-it.ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webk-it.ru/en/"/>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Услуги (якорные ссылки, но для sitemap лучше указывать основной URL + хэш) -->
+  <url>
+    <loc>https://webk-it.ru/#services</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webk-it.ru/#services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webk-it.ru/en/#services"/>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- О компании -->
+  <url>
+    <loc>https://webk-it.ru/#about</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webk-it.ru/#about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webk-it.ru/en/#about"/>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Как мы работаем -->
+  <url>
+    <loc>https://webk-it.ru/#workflow</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webk-it.ru/#workflow"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webk-it.ru/en/#workflow"/>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ (Частые вопросы) -->
+  <url>
+    <loc>https://webk-it.ru/#faq</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webk-it.ru/#faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webk-it.ru/en/#faq"/>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Контакты / Форма заявки -->
+  <url>
+    <loc>https://webk-it.ru/#contact</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://webk-it.ru/#contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://webk-it.ru/en/#contact"/>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
