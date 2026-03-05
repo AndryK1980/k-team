@@ -236,6 +236,10 @@ textarea {
   display: inline-flex;
 }
 
+.btn__loader[hidden] {
+  display: none !important;
+}
+
 .spinner {
   width: 20px;
   height: 20px;
