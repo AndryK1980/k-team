@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WebK — разработка сайтов, мобильных приложений и SEO-продвижение. Превращаем идеи в цифровые продукты.">
+  <meta name="description" content="Заказать лендинг, сделать сайт под ключ, добавить AI-интеграцию в проект. Разработка сайтов и мобильных приложений по всей России. Бесплатная консультация.">
   <meta name="robots" content="index, follow">
-  <title>WebK — Веб-разработка, приложения и SEO</title>
+  <meta name="geo.region" content="RU">
+  <title>Сделать лендинг и сайт под ключ | AI-интеграция | WebK — по всей России</title>
 
   <!-- Canonical URL -->
   <link rel="canonical" href="https://webk-it.ru/">
@@ -13,8 +14,8 @@
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://webk-it.ru/">
-  <meta property="og:title" content="WebK — Веб-разработка, приложения и SEO">
-  <meta property="og:description" content="Разработка сайтов, мобильных приложений и SEO-продвижение. Превращаем идеи в цифровые продукты.">
+  <meta property="og:title" content="Сделать лендинг и сайт | AI-интеграция в проект | WebK">
+  <meta property="og:description" content="Заказать лендинг, разработка сайта под ключ, внедрение искусственного интеллекта. Услуги по всей России.">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:site_name" content="WebK">
 
@@ -35,15 +36,39 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "ProfessionalService",
     "name": "WebK",
     "url": "https://webk-it.ru/",
-    "description": "Разработка сайтов, мобильных приложений и SEO-продвижение",
+    "description": "Разработка лендингов, сайтов под ключ, мобильных приложений, AI-интеграция и SEO-продвижение. Услуги по всей России.",
+    "areaServed": { "@type": "Country", "name": "Россия" },
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
       "url": "https://webk-it.ru/#contact"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Услуги веб-разработки",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Разработка лендинга" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Разработка сайта под ключ" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-интеграция в проект" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Разработка мобильных приложений" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO-продвижение сайта" } }
+      ]
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Как сделать лендинг под ключ?", "acceptedAnswer": { "@type": "Answer", "text": "Оставьте заявку — мы свяжемся в течение 30 минут. Обсудим цель, целевую аудиторию и бюджет. Создадим прототип, дизайн и разработаем лендинг с формой заявок и аналитикой. Срок — от 5 до 14 дней в зависимости от сложности." } },
+      { "@type": "Question", "name": "Сколько стоит разработка сайта?", "acceptedAnswer": { "@type": "Answer", "text": "Лендинг — от 30 000 ₽, корпоративный сайт — от 80 000 ₽, интернет-магазин — от 150 000 ₽. Точная стоимость зависит от объёма страниц, дизайна и функционала. Бесплатная смета после обсуждения задачи." } },
+      { "@type": "Question", "name": "Как добавить AI-интеграцию в проект?", "acceptedAnswer": { "@type": "Answer", "text": "Добавляем чат-ботов, голосовых помощников, интеграцию с ChatGPT/Claude и другими LLM. Внедряем ИИ для автоматизации поддержки, аналитики и персонализации. Работаем с существующими проектами и новыми разработками. Работаем по всей России." } },
+      { "@type": "Question", "name": "Работаете ли вы по всей России?", "acceptedAnswer": { "@type": "Answer", "text": "Да. Мы работаем с клиентами по всей России удалённо. Консультации, разработка и поддержка — онлайн. Связь через Telegram, видеозвонки и общие чаты. NDA по запросу." } }
+    ]
   }
   </script>
 </head>
@@ -59,6 +84,7 @@
           <li><a href="#services" class="nav__link" data-i18n="nav.services">Услуги</a></li>
           <li><a href="#about" class="nav__link" data-i18n="nav.about">О нас</a></li>
           <li><a href="#workflow" class="nav__link" data-i18n="nav.workflow">Как мы работаем</a></li>
+          <li><a href="#faq" class="nav__link" data-i18n="nav.faq">Вопросы</a></li>
           <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Контакты</a></li>
         </ul>
         <div class="nav__footer">
@@ -148,15 +174,15 @@
               <path d="M25 33H31" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3 class="service-card__title" data-i18n="services.website.title">Разработка сайтов</h3>
+          <h3 class="service-card__title" data-i18n="services.website.title">Разработка сайтов и лендингов</h3>
           <p class="service-card__text" data-i18n="services.website.text">
-            Лендинги, корпоративные сайты, интернет-магазины и веб-порталы. Адаптивный дизайн, высокая скорость загрузки, удобство использования.
+            Сделать лендинг под ключ, заказать сайт, создать интернет-магазин. Лендинги, корпоративные сайты, веб-порталы. Адаптивный дизайн, высокая скорость. Работаем по всей России.
           </p>
           <ul class="service-card__tags">
-            <li data-i18n="services.website.tags">Лендинги</li>
-            <li data-i18n="services.website.tags">Корпоративные сайты</li>
+            <li data-i18n="services.website.tags">Лендинг под ключ</li>
+            <li data-i18n="services.website.tags">Сайт на заказ</li>
             <li data-i18n="services.website.tags">Интернет-магазины</li>
-            <li data-i18n="services.website.tags">CRM-системы</li>
+            <li data-i18n="services.website.tags">Корпоративные сайты</li>
           </ul>
         </div>
 
@@ -205,6 +231,25 @@
             <li data-i18n="services.seo.tags">Оптимизация</li>
             <li data-i18n="services.seo.tags">Контент-стратегия</li>
             <li data-i18n="services.seo.tags">Аналитика</li>
+          </ul>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8v8M24 32v8M8 24h8M32 24h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 16l4 4M28 28l4 4M16 32l4-4M28 16l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="service-card__title" data-i18n="services.ai.title">AI-интеграция</h3>
+          <p class="service-card__text" data-i18n="services.ai.text">
+            Добавим искусственный интеллект в ваш проект: чат-боты, голосовые помощники, аналитика данных, автоматизация процессов.
+          </p>
+          <ul class="service-card__tags">
+            <li data-i18n="services.ai.tags">Чат-боты</li>
+            <li data-i18n="services.ai.tags">ИИ-ассистенты</li>
+            <li data-i18n="services.ai.tags">Автоматизация</li>
+            <li data-i18n="services.ai.tags">LLM-интеграция</li>
           </ul>
         </div>
       </div>
@@ -297,6 +342,35 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="faq.tag">Частые вопросы</span>
+        <h2 class="section-title" data-i18n="faq.title">Ответы на популярные запросы</h2>
+        <p class="section-subtitle" data-i18n="faq.subtitle">То, что чаще всего ищут клиенты перед заказом</p>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q1">Как сделать лендинг под ключ?</summary>
+          <p class="faq__answer" data-i18n="faq.a1">Оставьте заявку — мы свяжемся в течение 30 минут. Обсудим цель, целевую аудиторию и бюджет. Создадим прототип, дизайн и разработаем лендинг с формой заявок и аналитикой. Срок — от 5 до 14 дней в зависимости от сложности.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q2">Сколько стоит разработка сайта?</summary>
+          <p class="faq__answer" data-i18n="faq.a2">Лендинг — от 30 000 ₽, корпоративный сайт — от 80 000 ₽, интернет-магазин — от 150 000 ₽. Точная стоимость зависит от объёма страниц, дизайна и функционала. Бесплатная смета после обсуждения задачи.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q3">Как добавить AI-интеграцию в проект?</summary>
+          <p class="faq__answer" data-i18n="faq.a3">Добавляем чат-ботов, голосовых помощников, интеграцию с ChatGPT/Claude и другими LLM. Внедряем ИИ для автоматизации поддержки, аналитики и персонализации. Работаем с существующими проектами и новыми разработками. Работаем по всей России.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__question" data-i18n="faq.q4">Работаете ли вы по всей России?</summary>
+          <p class="faq__answer" data-i18n="faq.a4">Да. Мы работаем с клиентами по всей России удалённо. Консультации, разработка и поддержка — онлайн. Связь через Telegram, видеозвонки и общие чаты. NDA по запросу.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact -->
   <section class="contact" id="contact">
     <div class="container">
@@ -325,9 +399,10 @@
             <label for="service" class="form-label" data-i18n="contact.serviceLabel">Какая услуга интересует?</label>
             <select id="service" name="service" class="form-input form-select">
               <option value="" disabled selected>Выберите услугу</option>
-              <option value="website">Разработка сайта</option>
+              <option value="website">Разработка сайта / лендинг</option>
               <option value="app">Мобильное приложение</option>
               <option value="seo">SEO-продвижение</option>
+              <option value="ai">AI-интеграция в проект</option>
               <option value="complex">Комплексное решение</option>
             </select>
           </div>
@@ -396,6 +471,7 @@
         <ul>
           <li><a href="#about" data-i18n="footer.about">О нас</a></li>
           <li><a href="#workflow" data-i18n="footer.workflow">Как мы работаем</a></li>
+          <li><a href="#faq" data-i18n="footer.faq">Вопросы</a></li>
           <li><a href="#contact" data-i18n="footer.contact">Контакты</a></li>
         </ul>
       </div>

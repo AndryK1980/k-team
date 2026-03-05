@@ -5,13 +5,14 @@
 const TRANSLATIONS = {
   ru: {
     meta: {
-      description: 'WebK — разработка сайтов, мобильных приложений и SEO-продвижение. Превращаем идеи в цифровые продукты.',
-      title: 'WebK — Веб-разработка, приложения и SEO',
+      description: 'Заказать лендинг, сделать сайт под ключ, добавить AI-интеграцию в проект. Разработка сайтов и мобильных приложений по всей России. Бесплатная консультация.',
+      title: 'Сделать лендинг и сайт под ключ | AI-интеграция | WebK — по всей России',
     },
     nav: {
       services: 'Услуги',
       about: 'О нас',
       workflow: 'Как мы работаем',
+      faq: 'Вопросы',
       contact: 'Контакты',
     },
     header: { cta: 'Обсудить проект' },
@@ -20,7 +21,7 @@ const TRANSLATIONS = {
       titleBefore: 'Создаём ',
       titleHighlight: 'цифровые продукты',
       titleAfter: ', которые работают на ваш бизнес',
-      subtitle: 'Разработка сайтов, мобильных приложений и SEO-продвижение. Комплексный подход от идеи до результата.',
+      subtitle: 'Сделать лендинг, заказать сайт под ключ, добавить AI в проект. Разработка по всей России — лендинги, корпоративные сайты, мобильные приложения.',
       ctaPrimary: 'Оставить заявку',
       ctaSecondary: 'Наши услуги',
       statProjects: 'Проектов',
@@ -32,9 +33,9 @@ const TRANSLATIONS = {
       title: 'Что мы делаем',
       subtitle: 'Полный цикл цифровых услуг для развития вашего бизнеса',
       website: {
-        title: 'Разработка сайтов',
-        text: 'Лендинги, корпоративные сайты, интернет-магазины и веб-порталы. Адаптивный дизайн, высокая скорость загрузки, удобство использования.',
-        tags: ['Лендинги', 'Корпоративные сайты', 'Интернет-магазины', 'CRM-системы'],
+        title: 'Разработка сайтов и лендингов',
+        text: 'Сделать лендинг под ключ, заказать сайт, создать интернет-магазин. Лендинги, корпоративные сайты, веб-порталы. Адаптивный дизайн, высокая скорость. Работаем по всей России.',
+        tags: ['Лендинг под ключ', 'Сайт на заказ', 'Интернет-магазины', 'Корпоративные сайты'],
       },
       app: {
         title: 'Мобильные приложения',
@@ -46,6 +47,11 @@ const TRANSLATIONS = {
         text: 'Комплексное продвижение в поисковых системах. Рост органического трафика, улучшение позиций и увеличение конверсии.',
         tags: ['Аудит сайта', 'Оптимизация', 'Контент-стратегия', 'Аналитика'],
       },
+      ai: {
+        title: 'AI-интеграция',
+        text: 'Добавим искусственный интеллект в ваш проект: чат-боты, голосовые помощники, аналитика данных, автоматизация процессов.',
+        tags: ['Чат-боты', 'ИИ-ассистенты', 'Автоматизация', 'LLM-интеграция'],
+      },
     },
     about: {
       tag: 'О компании',
@@ -55,6 +61,19 @@ const TRANSLATIONS = {
       card2: { title: 'Прозрачный процесс', text: 'Регулярные отчёты, доступ к системе управления проектом и постоянная связь с менеджером на каждом этапе.' },
       card3: { title: 'Современные технологии', text: 'Используем актуальные инструменты и фреймворки, чтобы ваш продукт был быстрым, надёжным и масштабируемым.' },
       card4: { title: 'Поддержка после запуска', text: 'Не бросаем проект после сдачи. Техническая поддержка, обновления и развитие — мы всегда на связи.' },
+    },
+    faq: {
+      tag: 'Частые вопросы',
+      title: 'Ответы на популярные запросы',
+      subtitle: 'То, что чаще всего ищут клиенты перед заказом',
+      q1: 'Как сделать лендинг под ключ?',
+      a1: 'Оставьте заявку — мы свяжемся в течение 30 минут. Обсудим цель, целевую аудиторию и бюджет. Создадим прототип, дизайн и разработаем лендинг с формой заявок и аналитикой. Срок — от 5 до 14 дней в зависимости от сложности.',
+      q2: 'Сколько стоит разработка сайта?',
+      a2: 'Лендинг — от 30 000 ₽, корпоративный сайт — от 80 000 ₽, интернет-магазин — от 150 000 ₽. Точная стоимость зависит от объёма страниц, дизайна и функционала. Бесплатная смета после обсуждения задачи.',
+      q3: 'Как добавить AI-интеграцию в проект?',
+      a3: 'Добавляем чат-ботов, голосовых помощников, интеграцию с ChatGPT/Claude и другими LLM. Внедряем ИИ для автоматизации поддержки, аналитики и персонализации. Работаем с существующими проектами и новыми разработками. Работаем по всей России.',
+      q4: 'Работаете ли вы по всей России?',
+      a4: 'Да. Мы работаем с клиентами по всей России удалённо. Консультации, разработка и поддержка — онлайн. Связь через Telegram, видеозвонки и общие чаты. NDA по запросу.',
     },
     workflow: {
       tag: 'Процесс',
@@ -77,9 +96,10 @@ const TRANSLATIONS = {
       emailPlaceholder: 'mail@example.com',
       serviceLabel: 'Какая услуга интересует?',
       servicePlaceholder: 'Выберите услугу',
-      serviceWebsite: 'Разработка сайта',
+      serviceWebsite: 'Разработка сайта / лендинг',
       serviceApp: 'Мобильное приложение',
       serviceSeo: 'SEO-продвижение',
+      serviceAi: 'AI-интеграция в проект',
       serviceComplex: 'Комплексное решение',
       messageLabel: 'Расскажите о проекте',
       messagePlaceholder: 'Опишите вашу задачу, бюджет и сроки...',
@@ -102,6 +122,7 @@ const TRANSLATIONS = {
       company: 'Компания',
       about: 'О нас',
       workflow: 'Как мы работаем',
+      faq: 'Вопросы',
       contact: 'Контакты',
       rights: '© 2026 WebK. Все права защищены.',
     },
@@ -125,6 +146,7 @@ const TRANSLATIONS = {
       services: 'Services',
       about: 'About',
       workflow: 'How we work',
+      faq: 'FAQ',
       contact: 'Contact',
     },
     header: { cta: 'Discuss project' },
@@ -159,6 +181,11 @@ const TRANSLATIONS = {
         text: 'Comprehensive search engine optimization. Organic traffic growth, better rankings, and higher conversion.',
         tags: ['Site audit', 'Optimization', 'Content strategy', 'Analytics'],
       },
+      ai: {
+        title: 'AI Integration',
+        text: 'Add artificial intelligence to your project: chatbots, voice assistants, data analytics, process automation.',
+        tags: ['Chatbots', 'AI assistants', 'Automation', 'LLM integration'],
+      },
     },
     about: {
       tag: 'About company',
@@ -168,6 +195,19 @@ const TRANSLATIONS = {
       card2: { title: 'Transparent process', text: 'Regular reports, project management access, and continuous contact with your manager at every stage.' },
       card3: { title: 'Modern technologies', text: 'We use up-to-date tools and frameworks so your product is fast, reliable, and scalable.' },
       card4: { title: 'Post-launch support', text: 'We don\'t abandon projects after delivery. Technical support, updates, and development — we\'re always here.' },
+    },
+    faq: {
+      tag: 'FAQ',
+      title: 'Frequently asked questions',
+      subtitle: 'What clients ask most before ordering',
+      q1: 'How to order a landing page?',
+      a1: 'Submit a request — we\'ll get back within 30 minutes. We\'ll discuss goals, target audience, and budget. We create a prototype, design, and develop a landing page with lead forms and analytics. Timeline: 5–14 days depending on complexity.',
+      q2: 'How much does website development cost?',
+      a2: 'Landing page — from $400, corporate site — from $1,000, e-commerce — from $2,000. Exact cost depends on page count, design, and features. Free quote after discussing your needs.',
+      q3: 'How to add AI integration to a project?',
+      a3: 'We add chatbots, voice assistants, ChatGPT/Claude and other LLM integration. We implement AI for support automation, analytics, and personalization. We work with existing projects and new developments. Remote work worldwide.',
+      q4: 'Do you work across Russia?',
+      a4: 'Yes. We work with clients across Russia remotely. Consultations, development, and support — all online. Communication via Telegram, video calls, and shared channels. NDA available on request.',
     },
     workflow: {
       tag: 'Process',
@@ -190,9 +230,10 @@ const TRANSLATIONS = {
       emailPlaceholder: 'mail@example.com',
       serviceLabel: 'Which service interests you?',
       servicePlaceholder: 'Select a service',
-      serviceWebsite: 'Website development',
+      serviceWebsite: 'Website / landing',
       serviceApp: 'Mobile application',
       serviceSeo: 'SEO promotion',
+      serviceAi: 'AI integration',
       serviceComplex: 'Comprehensive solution',
       messageLabel: 'Tell us about your project',
       messagePlaceholder: 'Describe your task, budget, and timeline...',
@@ -215,6 +256,7 @@ const TRANSLATIONS = {
       company: 'Company',
       about: 'About us',
       workflow: 'How we work',
+      faq: 'FAQ',
       contact: 'Contact',
       rights: '© 2026 WebK. All rights reserved.',
     },
@@ -258,6 +300,7 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n="nav.services"]').forEach(el => { el.textContent = t.nav.services; });
   document.querySelectorAll('[data-i18n="nav.about"]').forEach(el => { el.textContent = t.nav.about; });
   document.querySelectorAll('[data-i18n="nav.workflow"]').forEach(el => { el.textContent = t.nav.workflow; });
+  document.querySelectorAll('[data-i18n="nav.faq"]').forEach(el => { el.textContent = t.nav.faq; });
   document.querySelectorAll('[data-i18n="nav.contact"]').forEach(el => { el.textContent = t.nav.contact; });
 
   // Header
@@ -289,12 +332,16 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n="services.app.text"]').forEach(el => { el.textContent = t.services.app.text; });
   document.querySelectorAll('[data-i18n="services.seo.title"]').forEach(el => { el.textContent = t.services.seo.title; });
   document.querySelectorAll('[data-i18n="services.seo.text"]').forEach(el => { el.textContent = t.services.seo.text; });
+  document.querySelectorAll('[data-i18n="services.ai.title"]').forEach(el => { el.textContent = t.services.ai.title; });
+  document.querySelectorAll('[data-i18n="services.ai.text"]').forEach(el => { el.textContent = t.services.ai.text; });
   const websiteTags = document.querySelectorAll('[data-i18n="services.website.tags"]');
   websiteTags.forEach((el, i) => { el.textContent = t.services.website.tags[i] ?? el.textContent; });
   const appTags = document.querySelectorAll('[data-i18n="services.app.tags"]');
   appTags.forEach((el, i) => { el.textContent = t.services.app.tags[i] ?? el.textContent; });
   const seoTags = document.querySelectorAll('[data-i18n="services.seo.tags"]');
   seoTags.forEach((el, i) => { el.textContent = t.services.seo.tags[i] ?? el.textContent; });
+  const aiTags = document.querySelectorAll('[data-i18n="services.ai.tags"]');
+  aiTags.forEach((el, i) => { el.textContent = t.services.ai.tags[i] ?? el.textContent; });
 
   // About
   document.querySelectorAll('[data-i18n="about.tag"]').forEach(el => { el.textContent = t.about.tag; });
@@ -310,6 +357,18 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n="about.card4.text"]').forEach(el => { el.textContent = t.about.card4.text; });
 
   // Workflow
+  document.querySelectorAll('[data-i18n="faq.tag"]').forEach(el => { el.textContent = t.faq.tag; });
+  document.querySelectorAll('[data-i18n="faq.title"]').forEach(el => { el.textContent = t.faq.title; });
+  document.querySelectorAll('[data-i18n="faq.subtitle"]').forEach(el => { el.textContent = t.faq.subtitle; });
+  document.querySelectorAll('[data-i18n="faq.q1"]').forEach(el => { el.textContent = t.faq.q1; });
+  document.querySelectorAll('[data-i18n="faq.a1"]').forEach(el => { el.textContent = t.faq.a1; });
+  document.querySelectorAll('[data-i18n="faq.q2"]').forEach(el => { el.textContent = t.faq.q2; });
+  document.querySelectorAll('[data-i18n="faq.a2"]').forEach(el => { el.textContent = t.faq.a2; });
+  document.querySelectorAll('[data-i18n="faq.q3"]').forEach(el => { el.textContent = t.faq.q3; });
+  document.querySelectorAll('[data-i18n="faq.a3"]').forEach(el => { el.textContent = t.faq.a3; });
+  document.querySelectorAll('[data-i18n="faq.q4"]').forEach(el => { el.textContent = t.faq.q4; });
+  document.querySelectorAll('[data-i18n="faq.a4"]').forEach(el => { el.textContent = t.faq.a4; });
+
   document.querySelectorAll('[data-i18n="workflow.tag"]').forEach(el => { el.textContent = t.workflow.tag; });
   document.querySelectorAll('[data-i18n="workflow.title"]').forEach(el => { el.textContent = t.workflow.title; });
   document.querySelectorAll('[data-i18n="workflow.subtitle"]').forEach(el => { el.textContent = t.workflow.subtitle; });
@@ -345,6 +404,7 @@ function applyTranslations(lang) {
       else if (opt.value === 'website') opt.textContent = t.contact.serviceWebsite;
       else if (opt.value === 'app') opt.textContent = t.contact.serviceApp;
       else if (opt.value === 'seo') opt.textContent = t.contact.serviceSeo;
+      else if (opt.value === 'ai') opt.textContent = t.contact.serviceAi;
       else if (opt.value === 'complex') opt.textContent = t.contact.serviceComplex;
     });
   }
@@ -369,6 +429,7 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n="footer.company"]').forEach(el => { el.textContent = t.footer.company; });
   document.querySelectorAll('[data-i18n="footer.about"]').forEach(el => { el.textContent = t.footer.about; });
   document.querySelectorAll('[data-i18n="footer.workflow"]').forEach(el => { el.textContent = t.footer.workflow; });
+  document.querySelectorAll('[data-i18n="footer.faq"]').forEach(el => { el.textContent = t.footer.faq; });
   document.querySelectorAll('[data-i18n="footer.contact"]').forEach(el => { el.textContent = t.footer.contact; });
   document.querySelectorAll('[data-i18n="footer.rights"]').forEach(el => { el.textContent = t.footer.rights; });
 }
