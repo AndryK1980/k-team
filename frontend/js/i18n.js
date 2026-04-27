@@ -136,6 +136,78 @@ const TRANSLATIONS = {
       validatePhone: 'Введите корректный номер телефона',
       validateEmail: 'Введите корректный email',
     },
+    policy: {
+      meta: {
+        title: 'Политика конфиденциальности | WebK — разработка сайтов и AI-интеграция',
+        description: 'Политика конфиденциальности WebK. Условия обработки персональных данных при заказе услуг веб-разработки и AI-интеграции.',
+      },
+      title: 'Политика конфиденциальности',
+      desc: 'Настоящая политика конфиденциальности регулирует порядок обработки персональных данных пользователей сайта WebK',
+      update: 'Последнее обновление: 5 марта 2026 года',
+      h2_1: '1. Общие положения',
+      p1_1: 'Настоящая политика конфиденциальности (далее — «Политика») разработана в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных пользователей сайта <strong>webk-it.ru</strong> (далее — «Сайт») компании <strong>WebK</strong> (K-Team).',
+      p1_2: 'Используя Сайт и оставляя заявки через формы обратной связи, пользователь выражает своё согласие с условиями настоящей Политики. В случае несогласия с условиями Политики пользователь должен воздержаться от использования Сайта.',
+      h2_2: '2. Персональные данные',
+      p2_1: 'Под персональными данными в рамках настоящей Политики понимаются сведения, которые позволяют идентифицировать пользователя и которые он сознательно предоставляет при заполнении форм на Сайте:',
+      li2_1: '<strong>Имя</strong> — для обращения к вам и персонализации коммуникации',
+      li2_2: '<strong>Номер телефона</strong> — для оперативной связи и обсуждения проекта',
+      li2_3: '<strong>Адрес электронной почты</strong> — для отправки документов, смет и подтверждений',
+      li2_4: '<strong>Информация о проекте</strong> — описание задачи, выбранная услуга (разработка сайта, мобильное приложение, SEO, AI-интеграция) — для подготовки предложения',
+      p2_2: 'Сайт не собирает и не обрабатывает специальные категории персональных данных, касающиеся расовой, национальной принадлежности, политических взглядов, религиозных или философских убеждений, состояния здоровья.',
+      h2_3: '3. Цели обработки персональных данных',
+      p3_1: 'Сайт собирает и обрабатывает персональные данные исключительно в следующих целях:',
+      li3_1: '<strong>Обратная связь</strong> — ответ на заявки, консультации по услугам веб-разработки, AI-интеграции и другим услугам',
+      li3_2: '<strong>Предоставление информации об услугах</strong> — информирование о ценах, сроках выполнения работ, подготовка смет и технических заданий',
+      li3_3: '<strong>Заключение и исполнение договора</strong> — составление договора на разработку сайта, приложения или иных цифровых продуктов',
+      li3_4: '<strong>Улучшение работы сайта и аналитика</strong> — сбор статистики посещаемости, анализ поведения пользователей для оптимизации сайта',
+      h2_4: '4. Способы сбора персональных данных',
+      p4_1: 'Данные могут собираться через:',
+      li4_1: '<strong>Форма заявки</strong> (раздел «Обсудим ваш проект?»)',
+      li4_2: '<strong>Прямая связь в Telegram</strong> — при обращении через бота @webksite_bot',
+      p4_2: 'При посещении Сайта автоматически могут собираться технические данные: IP-адрес, тип браузера, операционная система, дата и время посещения, просмотренные страницы. Эти данные используются для статистики и не позволяют идентифицировать пользователя без дополнительной информации.',
+      h2_5: '5. Передача данных третьим лицам',
+      p5_1: 'Компания WebK <strong>не передаёт</strong> персональные данные третьим лицам, за исключением следующих случаев:',
+      li5_1: '<strong>Исполнения требований законодательства РФ</strong> — по запросу уполномоченных государственных органов (суд, полиция, прокуратура)',
+      li5_2: '<strong>Передачи данных сервисам, обеспечивающим работу сайта</strong> — CRM-системы, почтовые сервисы, сервисы рассылок, при условии соблюдения ими конфиденциальности и защиты данных',
+      li5_3: '<strong>Защиты прав и законных интересов компании</strong> — в случае нарушения пользователем условий использования сайта',
+      p5_2: 'Все сервисы, привлекаемые для обработки персональных данных, обязуются соблюдать конфиденциальность и обеспечивать защиту данных в соответствии с законодательством РФ.',
+      h2_6: '6. Cookies и аналитика',
+      p6_1: 'Сайт может использовать файлы cookies и сторонние сервисы веб-аналитики (Яндекс.Метрика, Google Analytics) для:',
+      li6_1: 'Улучшения работы сайта и удобства пользователей',
+      li6_2: 'Сбора статистики посещаемости и анализа поведения пользователей',
+      li6_3: 'Оптимизации рекламных кампаний',
+      p6_2: 'Пользователь может отключить использование cookies в настройках своего браузера. Однако это может привести к некорректной работе некоторых функций сайта.',
+      p6_3: 'Используя наш сайт, вы соглашаетесь на использование файлов cookies и обработку данных сервисами аналитики.',
+      h2_7: '7. Права пользователей',
+      p7_1: 'В соответствии с законодательством РФ пользователь имеет право:',
+      li7_1: '<strong>Получить информацию</strong> о своих персональных данных, хранящихся у оператора',
+      li7_2: '<strong>Требовать уточнения, блокировки или удаления</strong> персональных данных, если они являются неполными, устаревшими, недостоверными или обрабатываются с нарушениями',
+      li7_3: '<strong>Отозвать согласие</strong> на обработку персональных данных в любое время',
+      li7_4: '<strong>Обжаловать действия оператора</strong> в уполномоченном органе по защите прав субъектов персональных данных',
+      p7_2: 'Для реализации своих прав пользователь может направить запрос в Telegram или на электронную почту (контактные данные указаны в разделе 8).',
+      h2_8: '8. Контактные данные',
+      p8_1: 'Все вопросы, связанные с обработкой персональных данных, можно направлять по следующим контактам:',
+      telegram: 'Telegram:',
+      email: 'Email:',
+      h2_9: '9. Заключительные положения',
+      p9_1: 'Компания WebK оставляет за собой право вносить изменения в настоящую Политику конфиденциальности. Новая редакция Политики вступает в силу с момента её размещения на Сайте, если иное не предусмотрено новой редакцией Политики.',
+      p9_2: 'Действующая редакция Политики всегда доступна на данной странице. Продолжение использования Сайта после внесения изменений означает согласие пользователя с новой редакцией Политики.',
+      rights: '© 2026 WebK (K-Team). Все права защищены.',
+      back: '← Вернуться на главную',
+      navLink: 'Политика конфиденциальности',
+    },
+    error404: {
+      meta: {
+        title: 'Страница не найдена (404) | WebK',
+        description: 'Страница не найдена. Вернитесь на главную страницу WebK и продолжите просмотр услуг.',
+      },
+      code: '404',
+      title: 'Страница не найдена',
+      desc: 'Похоже, ссылка устарела или страница была перемещена. Вернитесь на главную и продолжите просмотр.',
+      toHome: 'На главную',
+      toServices: 'К услугам',
+      navLink: 'Страница 404',
+    },
   },
   en: {
     meta: {
@@ -270,6 +342,78 @@ const TRANSLATIONS = {
       validatePhone: 'Enter a valid phone number',
       validateEmail: 'Enter a valid email',
     },
+    policy: {
+      meta: {
+        title: 'Privacy Policy | WebK — Website Development & AI Integration',
+        description: 'WebK Privacy Policy. Terms of personal data processing when ordering web development and AI integration services.',
+      },
+      title: 'Privacy Policy',
+      desc: 'This privacy policy governs the processing of personal data of users of the WebK website',
+      update: 'Last updated: March 5, 2026',
+      h2_1: '1. General Provisions',
+      p1_1: 'This privacy policy (hereinafter — the «Policy») is developed in accordance with applicable data protection laws and defines the procedure for processing personal data of users of the <strong>webk-it.ru</strong> website (hereinafter — the «Site») of <strong>WebK</strong> (K-Team).',
+      p1_2: 'By using the Site and submitting requests through contact forms, the user agrees to the terms of this Policy. If you disagree with the Policy terms, you must refrain from using the Site.',
+      h2_2: '2. Personal Data',
+      p2_1: 'Personal data under this Policy means information that allows identification of the user and is voluntarily provided when filling out forms on the Site:',
+      li2_1: '<strong>Name</strong> — for addressing you and personalizing communication',
+      li2_2: '<strong>Phone number</strong> — for prompt contact and project discussion',
+      li2_3: '<strong>Email address</strong> — for sending documents, estimates, and confirmations',
+      li2_4: '<strong>Project information</strong> — task description, selected service (website development, mobile app, SEO, AI integration) — for preparing proposals',
+      p2_2: 'The Site does not collect or process special categories of personal data concerning race, nationality, political views, religious or philosophical beliefs, or health status.',
+      h2_3: '3. Purposes of Processing Personal Data',
+      p3_1: 'The Site collects and processes personal data solely for the following purposes:',
+      li3_1: '<strong>Contact</strong> — responding to requests, consultations on web development, AI integration and other services',
+      li3_2: '<strong>Service information</strong> — informing about prices, deadlines, preparing estimates and technical specifications',
+      li3_3: '<strong>Contract execution</strong> — drafting agreements for website, app or other digital product development',
+      li3_4: '<strong>Site improvement and analytics</strong> — collecting visit statistics, analyzing user behavior to optimize the site',
+      h2_4: '4. Methods of Collecting Personal Data',
+      p4_1: 'Data may be collected through:',
+      li4_1: '<strong>Contact form</strong> («Let\'s discuss your project?» section)',
+      li4_2: '<strong>Direct contact via Telegram</strong> — when contacting via @webksite_bot',
+      p4_2: 'When visiting the Site, technical data may be automatically collected: IP address, browser type, operating system, date and time of visit, pages viewed. This data is used for statistics and does not allow identification of the user without additional information.',
+      h2_5: '5. Disclosure to Third Parties',
+      p5_1: 'WebK <strong>does not disclose</strong> personal data to third parties, except in the following cases:',
+      li5_1: '<strong>Legal compliance</strong> — upon request of authorized government bodies (court, police, prosecutor\'s office)',
+      li5_2: '<strong>Service providers</strong> — CRM systems, email services, mailing services, provided they maintain confidentiality and data protection',
+      li5_3: '<strong>Protecting company rights</strong> — in case of user violation of site terms of use',
+      p5_2: 'All services involved in processing personal data undertake to maintain confidentiality and ensure data protection in accordance with applicable law.',
+      h2_6: '6. Cookies and Analytics',
+      p6_1: 'The Site may use cookies and third-party web analytics services (Yandex.Metrica, Google Analytics) for:',
+      li6_1: 'Improving site performance and user experience',
+      li6_2: 'Collecting visit statistics and analyzing user behavior',
+      li6_3: 'Optimizing advertising campaigns',
+      p6_2: 'Users can disable cookies in their browser settings. However, this may affect the proper functioning of some site features.',
+      p6_3: 'By using our site, you agree to the use of cookies and data processing by analytics services.',
+      h2_7: '7. User Rights',
+      p7_1: 'Under applicable law, users have the right to:',
+      li7_1: '<strong>Obtain information</strong> about their personal data held by the operator',
+      li7_2: '<strong>Request correction, blocking or deletion</strong> of personal data if it is incomplete, outdated, inaccurate or processed in violation',
+      li7_3: '<strong>Withdraw consent</strong> to processing of personal data at any time',
+      li7_4: '<strong>Lodge a complaint</strong> with the supervisory authority for personal data protection',
+      p7_2: 'To exercise your rights, you may send a request via Telegram or email (contact details are provided in Section 8).',
+      h2_8: '8. Contact Information',
+      p8_1: 'All questions regarding personal data processing may be sent to the following contacts:',
+      telegram: 'Telegram:',
+      email: 'Email:',
+      h2_9: '9. Final Provisions',
+      p9_1: 'WebK reserves the right to make changes to this Privacy Policy. The new version of the Policy takes effect upon publication on the Site, unless otherwise stated in the new version.',
+      p9_2: 'The current version of the Policy is always available on this page. Continued use of the Site after changes constitutes your acceptance of the new Policy version.',
+      rights: '© 2026 WebK (K-Team). All rights reserved.',
+      back: '← Back to home',
+      navLink: 'Privacy Policy',
+    },
+    error404: {
+      meta: {
+        title: 'Page not found (404) | WebK',
+        description: 'The page was not found. Return to the WebK homepage and continue browsing our services.',
+      },
+      code: '404',
+      title: 'Page not found',
+      desc: 'The link may be outdated or the page has been moved. Return to the homepage to continue browsing.',
+      toHome: 'Go to homepage',
+      toServices: 'View services',
+      navLink: '404 page',
+    },
   },
 };
 
@@ -292,9 +436,27 @@ function applyTranslations(lang) {
   const t = TRANSLATIONS[lang];
   if (!t) return;
 
+  const isPolicyPage = document.querySelector('.policy-hero') || (typeof window !== 'undefined' && window.location.pathname.includes('privacy'));
+  const is404Page = document.querySelector('.error-hero') || (typeof window !== 'undefined' && window.location.pathname.includes('404'));
+
   // Meta
-  document.querySelector('meta[name="description"]').setAttribute('content', t.meta.description);
-  document.title = t.meta.title;
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    if (isPolicyPage && t.policy) {
+      metaDesc.setAttribute('content', t.policy.meta.description);
+    } else if (is404Page && t.error404) {
+      metaDesc.setAttribute('content', t.error404.meta.description);
+    } else {
+      metaDesc.setAttribute('content', t.meta.description);
+    }
+  }
+  if (isPolicyPage && t.policy) {
+    document.title = t.policy.meta.title;
+  } else if (is404Page && t.error404) {
+    document.title = t.error404.meta.title;
+  } else {
+    document.title = t.meta.title;
+  }
 
   // Nav
   document.querySelectorAll('[data-i18n="nav.services"]').forEach(el => { el.textContent = t.nav.services; });
@@ -432,6 +594,78 @@ function applyTranslations(lang) {
   document.querySelectorAll('[data-i18n="footer.faq"]').forEach(el => { el.textContent = t.footer.faq; });
   document.querySelectorAll('[data-i18n="footer.contact"]').forEach(el => { el.textContent = t.footer.contact; });
   document.querySelectorAll('[data-i18n="footer.rights"]').forEach(el => { el.textContent = t.footer.rights; });
+  if (t.policy) {
+    document.querySelectorAll('[data-i18n="policy.navLink"]').forEach(el => { el.textContent = t.policy.navLink; });
+  }
+  if (t.error404) {
+    document.querySelectorAll('[data-i18n="error404.navLink"]').forEach(el => { el.textContent = t.error404.navLink; });
+  }
+
+  // Policy page
+  if (isPolicyPage && t.policy) {
+    document.querySelectorAll('[data-i18n="policy.title"]').forEach(el => { el.textContent = t.policy.title; });
+    document.querySelectorAll('[data-i18n="policy.desc"]').forEach(el => { el.textContent = t.policy.desc; });
+    document.querySelectorAll('[data-i18n="policy.update"]').forEach(el => { el.textContent = t.policy.update; });
+    document.querySelectorAll('[data-i18n="policy.h2_1"]').forEach(el => { el.textContent = t.policy.h2_1; });
+    document.querySelectorAll('[data-i18n="policy.p1_1"]').forEach(el => { el.innerHTML = t.policy.p1_1; });
+    document.querySelectorAll('[data-i18n="policy.p1_2"]').forEach(el => { el.textContent = t.policy.p1_2; });
+    document.querySelectorAll('[data-i18n="policy.h2_2"]').forEach(el => { el.textContent = t.policy.h2_2; });
+    document.querySelectorAll('[data-i18n="policy.p2_1"]').forEach(el => { el.textContent = t.policy.p2_1; });
+    document.querySelectorAll('[data-i18n="policy.li2_1"]').forEach(el => { el.innerHTML = t.policy.li2_1; });
+    document.querySelectorAll('[data-i18n="policy.li2_2"]').forEach(el => { el.innerHTML = t.policy.li2_2; });
+    document.querySelectorAll('[data-i18n="policy.li2_3"]').forEach(el => { el.innerHTML = t.policy.li2_3; });
+    document.querySelectorAll('[data-i18n="policy.li2_4"]').forEach(el => { el.innerHTML = t.policy.li2_4; });
+    document.querySelectorAll('[data-i18n="policy.p2_2"]').forEach(el => { el.textContent = t.policy.p2_2; });
+    document.querySelectorAll('[data-i18n="policy.h2_3"]').forEach(el => { el.textContent = t.policy.h2_3; });
+    document.querySelectorAll('[data-i18n="policy.p3_1"]').forEach(el => { el.textContent = t.policy.p3_1; });
+    document.querySelectorAll('[data-i18n="policy.li3_1"]').forEach(el => { el.innerHTML = t.policy.li3_1; });
+    document.querySelectorAll('[data-i18n="policy.li3_2"]').forEach(el => { el.innerHTML = t.policy.li3_2; });
+    document.querySelectorAll('[data-i18n="policy.li3_3"]').forEach(el => { el.innerHTML = t.policy.li3_3; });
+    document.querySelectorAll('[data-i18n="policy.li3_4"]').forEach(el => { el.innerHTML = t.policy.li3_4; });
+    document.querySelectorAll('[data-i18n="policy.h2_4"]').forEach(el => { el.textContent = t.policy.h2_4; });
+    document.querySelectorAll('[data-i18n="policy.p4_1"]').forEach(el => { el.textContent = t.policy.p4_1; });
+    document.querySelectorAll('[data-i18n="policy.li4_1"]').forEach(el => { el.innerHTML = t.policy.li4_1; });
+    document.querySelectorAll('[data-i18n="policy.li4_2"]').forEach(el => { el.innerHTML = t.policy.li4_2; });
+    document.querySelectorAll('[data-i18n="policy.p4_2"]').forEach(el => { el.textContent = t.policy.p4_2; });
+    document.querySelectorAll('[data-i18n="policy.h2_5"]').forEach(el => { el.textContent = t.policy.h2_5; });
+    document.querySelectorAll('[data-i18n="policy.p5_1"]').forEach(el => { el.innerHTML = t.policy.p5_1; });
+    document.querySelectorAll('[data-i18n="policy.li5_1"]').forEach(el => { el.innerHTML = t.policy.li5_1; });
+    document.querySelectorAll('[data-i18n="policy.li5_2"]').forEach(el => { el.innerHTML = t.policy.li5_2; });
+    document.querySelectorAll('[data-i18n="policy.li5_3"]').forEach(el => { el.innerHTML = t.policy.li5_3; });
+    document.querySelectorAll('[data-i18n="policy.p5_2"]').forEach(el => { el.textContent = t.policy.p5_2; });
+    document.querySelectorAll('[data-i18n="policy.h2_6"]').forEach(el => { el.textContent = t.policy.h2_6; });
+    document.querySelectorAll('[data-i18n="policy.p6_1"]').forEach(el => { el.textContent = t.policy.p6_1; });
+    document.querySelectorAll('[data-i18n="policy.li6_1"]').forEach(el => { el.textContent = t.policy.li6_1; });
+    document.querySelectorAll('[data-i18n="policy.li6_2"]').forEach(el => { el.textContent = t.policy.li6_2; });
+    document.querySelectorAll('[data-i18n="policy.li6_3"]').forEach(el => { el.textContent = t.policy.li6_3; });
+    document.querySelectorAll('[data-i18n="policy.p6_2"]').forEach(el => { el.textContent = t.policy.p6_2; });
+    document.querySelectorAll('[data-i18n="policy.p6_3"]').forEach(el => { el.textContent = t.policy.p6_3; });
+    document.querySelectorAll('[data-i18n="policy.h2_7"]').forEach(el => { el.textContent = t.policy.h2_7; });
+    document.querySelectorAll('[data-i18n="policy.p7_1"]').forEach(el => { el.textContent = t.policy.p7_1; });
+    document.querySelectorAll('[data-i18n="policy.li7_1"]').forEach(el => { el.innerHTML = t.policy.li7_1; });
+    document.querySelectorAll('[data-i18n="policy.li7_2"]').forEach(el => { el.innerHTML = t.policy.li7_2; });
+    document.querySelectorAll('[data-i18n="policy.li7_3"]').forEach(el => { el.innerHTML = t.policy.li7_3; });
+    document.querySelectorAll('[data-i18n="policy.li7_4"]').forEach(el => { el.innerHTML = t.policy.li7_4; });
+    document.querySelectorAll('[data-i18n="policy.p7_2"]').forEach(el => { el.textContent = t.policy.p7_2; });
+    document.querySelectorAll('[data-i18n="policy.h2_8"]').forEach(el => { el.textContent = t.policy.h2_8; });
+    document.querySelectorAll('[data-i18n="policy.p8_1"]').forEach(el => { el.textContent = t.policy.p8_1; });
+    document.querySelectorAll('[data-i18n="policy.telegram"]').forEach(el => { el.textContent = t.policy.telegram; });
+    document.querySelectorAll('[data-i18n="policy.email"]').forEach(el => { el.textContent = t.policy.email; });
+    document.querySelectorAll('[data-i18n="policy.h2_9"]').forEach(el => { el.textContent = t.policy.h2_9; });
+    document.querySelectorAll('[data-i18n="policy.p9_1"]').forEach(el => { el.textContent = t.policy.p9_1; });
+    document.querySelectorAll('[data-i18n="policy.p9_2"]').forEach(el => { el.textContent = t.policy.p9_2; });
+    document.querySelectorAll('[data-i18n="policy.rights"]').forEach(el => { el.textContent = t.policy.rights; });
+    document.querySelectorAll('[data-i18n="policy.back"]').forEach(el => { el.textContent = t.policy.back; });
+  }
+
+  // 404 page
+  if (is404Page && t.error404) {
+    document.querySelectorAll('[data-i18n="error404.code"]').forEach(el => { el.textContent = t.error404.code; });
+    document.querySelectorAll('[data-i18n="error404.title"]').forEach(el => { el.textContent = t.error404.title; });
+    document.querySelectorAll('[data-i18n="error404.desc"]').forEach(el => { el.textContent = t.error404.desc; });
+    document.querySelectorAll('[data-i18n="error404.toHome"]').forEach(el => { el.textContent = t.error404.toHome; });
+    document.querySelectorAll('[data-i18n="error404.toServices"]').forEach(el => { el.textContent = t.error404.toServices; });
+  }
 }
 
 function updateLangSwitcher(lang) {

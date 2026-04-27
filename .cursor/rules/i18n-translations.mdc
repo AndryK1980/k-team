@@ -1,0 +1,51 @@
+---
+description: Всегда добавлять переводы (i18n) на страницы. RU/EN обязательно.
+alwaysApply: true
+---
+
+# i18n — Переводы на страницах
+
+Все пользовательские страницы должны поддерживать **минимум RU и EN** с переключателем языка.
+
+## Обязательно при добавлении/изменении контента
+
+- Любой новый текст на странице → добавить в `TRANSLATIONS` (ru + en) в `frontend/js/i18n.js`
+- Разметка → атрибут `data-i18n="ключ"` для элементов с текстом
+- Формы → placeholders, labels, options, сообщения валидации и toast — всё через i18n
+
+## Структура (как сделано в проекте)
+
+```
+frontend/js/i18n.js
+├── TRANSLATIONS { ru: {...}, en: {...} }
+├── getLang() / setLang() / applyTranslations()
+├── initI18n() — вызывается при DOMContentLoaded
+└── getTranslations(lang) — для toast/валидации в main.js
+```
+
+## Элементы
+
+- **Переключатель** — кнопки RU | EN в хедере (`lang-switcher`)
+- **Сохранение** — localStorage `k-team-lang`
+- **Meta** — title, description обновляются при смене языка
+- **Атрибут `html lang`** — обновляется для доступности и SEO
+
+## При добавлении новой секции/блока
+
+1. Добавить ключи в `TRANSLATIONS.ru` и `TRANSLATIONS.en`
+2. Добавить `data-i18n="..."` в HTML
+3. Добавить обновление в `applyTranslations()` в i18n.js
+
+## Пример
+
+```html
+<h2 data-i18n="services.title">Что мы делаем</h2>
+```
+
+```javascript
+// i18n.js
+services: {
+  title: 'Что мы делаем',  // ru
+  // en: 'What we do'
+}
+```

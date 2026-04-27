@@ -62,4 +62,20 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Политика конфиденциальности -->
+  <url>
+    <loc>https://webk-it.ru/privacy-policy.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Кастомная страница 404 -->
+  <url>
+    <loc>https://webk-it.ru/404.html</loc>
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
 </urlset>
