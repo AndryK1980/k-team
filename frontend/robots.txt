@@ -9,6 +9,7 @@ Disallow: /fonts/             # Шрифты
 # Disallow: /admin/
 # Disallow: /thanks/
 # Disallow: /404.html
+Allow: /404.html
 
 # Указываем главное зеркало сайта (без www)
 Host: https://webk-it.ru

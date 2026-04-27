@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Страница не найдена. Вернитесь на главную страницу WebK и продолжите просмотр услуг.">
+  <meta name="robots" content="noindex, follow">
+  <title>Страница не найдена (404) | WebK</title>
+  <link rel="canonical" href="https://webk-it.ru/404.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://webk-it.ru/404.html">
+  <meta property="og:title" content="Страница не найдена (404) | WebK">
+  <meta property="og:description" content="Страница не найдена. Вернитесь на главную страницу WebK и продолжите просмотр услуг.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="WebK">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+  <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .error-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: calc(var(--header-height) + 40px) 0 80px;
+      background: var(--gradient-hero);
+    }
+    .error-hero__inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: 48px 32px;
+      box-shadow: var(--shadow-lg);
+    }
+    .error-hero__code {
+      display: inline-block;
+      font-size: clamp(56px, 10vw, 110px);
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .error-hero__title {
+      font-size: clamp(30px, 4vw, 46px);
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+    .error-hero__desc {
+      max-width: 620px;
+      margin: 0 auto 32px;
+      color: var(--color-text-secondary);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+    .error-hero__actions {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 640px) {
+      .error-hero__inner {
+        padding: 36px 20px;
+      }
+      .error-hero__desc {
+        font-size: 16px;
+      }
+      .error-hero__actions {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo logo--animated">
+        <span class="logo__w">W</span><span class="logo__mid"><span class="logo__eb">eb</span><span class="logo__caret">^</span></span><span class="logo__k">K</span>
+      </a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html#services" class="nav__link" data-i18n="nav.services">Услуги</a></li>
+          <li><a href="index.html#about" class="nav__link" data-i18n="nav.about">О нас</a></li>
+          <li><a href="index.html#workflow" class="nav__link" data-i18n="nav.workflow">Как мы работаем</a></li>
+          <li><a href="index.html#faq" class="nav__link" data-i18n="nav.faq">Вопросы</a></li>
+          <li><a href="index.html#contact" class="nav__link" data-i18n="nav.contact">Контакты</a></li>
+        </ul>
+        <div class="nav__footer">
+          <div class="lang-switcher lang-switcher--mobile" role="group" aria-label="Язык / Language">
+            <button type="button" class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang-switcher__btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </nav>
+      <div class="header__actions">
+        <div class="lang-switcher" role="group" aria-label="Язык / Language">
+          <button type="button" class="lang-switcher__btn lang-switcher__btn--active" data-lang="ru" aria-pressed="true">RU</button>
+          <button type="button" class="lang-switcher__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a href="index.html#contact" class="btn btn--header" data-i18n="header.cta">Обсудить проект</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-hero">
+      <div class="container">
+        <div class="error-hero__inner">
+          <p class="error-hero__code gradient-text" data-i18n="error404.code">404</p>
+          <h1 class="error-hero__title" data-i18n="error404.title">Страница не найдена</h1>
+          <p class="error-hero__desc" data-i18n="error404.desc">
+            Похоже, ссылка устарела или страница была перемещена. Вернитесь на главную и продолжите просмотр.
+          </p>
+          <div class="error-hero__actions">
+            <a href="index.html" class="btn btn--primary btn--lg" data-i18n="error404.toHome">На главную</a>
+            <a href="index.html#services" class="btn btn--outline btn--lg" data-i18n="error404.toServices">К услугам</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--animated">
+          <span class="logo__w">W</span><span class="logo__mid"><span class="logo__eb">eb</span><span class="logo__caret">^</span></span><span class="logo__k">K</span>
+        </a>
+        <p class="footer__desc" data-i18n="footer.desc">Разработка цифровых продуктов для вашего бизнеса</p>
+      </div>
+      <div class="footer__links">
+        <h4 data-i18n="footer.services">Услуги</h4>
+        <ul>
+          <li><a href="index.html#services" data-i18n="footer.website">Разработка сайтов</a></li>
+          <li><a href="index.html#services" data-i18n="footer.app">Мобильные приложения</a></li>
+          <li><a href="index.html#services" data-i18n="footer.seo">SEO-продвижение</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4 data-i18n="footer.company">Компания</h4>
+        <ul>
+          <li><a href="index.html#about" data-i18n="footer.about">О нас</a></li>
+          <li><a href="index.html#workflow" data-i18n="footer.workflow">Как мы работаем</a></li>
+          <li><a href="index.html#faq" data-i18n="footer.faq">Вопросы</a></li>
+          <li><a href="index.html#contact" data-i18n="footer.contact">Контакты</a></li>
+          <li><a href="privacy-policy.html" data-i18n="policy.navLink">Политика конфиденциальности</a></li>
+          <li><a href="404.html" data-i18n="error404.navLink">Страница 404</a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer.rights">&copy; 2026 K-Team. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      initI18n();
+      const burger = document.getElementById('burger');
+      const nav = document.getElementById('nav');
+      if (burger && nav) {
+        burger.addEventListener('click', function() {
+          nav.classList.toggle('nav--open');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
