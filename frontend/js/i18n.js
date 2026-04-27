@@ -5,8 +5,8 @@
 const TRANSLATIONS = {
   ru: {
     meta: {
-      description: 'Заказать лендинг, сделать сайт под ключ, добавить AI-интеграцию в проект. Разработка сайтов и мобильных приложений по всей России. Бесплатная консультация.',
-      title: 'Сделать лендинг и сайт под ключ | AI-интеграция | WebK — по всей России',
+      description: 'Разработка сайтов, лендингов, SEO и AI-интеграция в Москве и Московской области. Создаем проекты под ключ с фокусом на заявки и рост бизнеса.',
+      title: 'Разработка сайтов в Москве и МО | SEO и AI-интеграция | WebK',
     },
     nav: {
       services: 'Услуги',
@@ -21,7 +21,8 @@ const TRANSLATIONS = {
       titleBefore: 'Создаём ',
       titleHighlight: 'цифровые продукты',
       titleAfter: ', которые работают на ваш бизнес',
-      subtitle: 'Сделать лендинг, заказать сайт под ключ, добавить AI в проект. Разработка по всей России — лендинги, корпоративные сайты, мобильные приложения.',
+      subtitle: 'Сделать лендинг, заказать сайт под ключ, добавить AI в проект. Разработка в Москве и Московской области — лендинги, корпоративные сайты, мобильные приложения.',
+      geoSubtitle: 'Работаем с компаниями из Москвы и Московской области: запуск от идеи до первых заявок.',
       ctaPrimary: 'Оставить заявку',
       ctaSecondary: 'Наши услуги',
       statProjects: 'Проектов',
@@ -34,7 +35,7 @@ const TRANSLATIONS = {
       subtitle: 'Полный цикл цифровых услуг для развития вашего бизнеса',
       website: {
         title: 'Разработка сайтов и лендингов',
-        text: 'Сделать лендинг под ключ, заказать сайт, создать интернет-магазин. Лендинги, корпоративные сайты, веб-порталы. Адаптивный дизайн, высокая скорость. Работаем по всей России.',
+        text: 'Сделать лендинг под ключ, заказать сайт, создать интернет-магазин. Лендинги, корпоративные сайты, веб-порталы. Адаптивный дизайн, высокая скорость. Работаем в Москве и Московской области.',
         tags: ['Лендинг под ключ', 'Сайт на заказ', 'Интернет-магазины', 'Корпоративные сайты'],
       },
       app: {
@@ -72,8 +73,8 @@ const TRANSLATIONS = {
       a2: 'Лендинг — от 30 000 ₽, корпоративный сайт — от 80 000 ₽, интернет-магазин — от 150 000 ₽. Точная стоимость зависит от объёма страниц, дизайна и функционала. Бесплатная смета после обсуждения задачи.',
       q3: 'Как добавить AI-интеграцию в проект?',
       a3: 'Добавляем чат-ботов, голосовых помощников, интеграцию с ChatGPT/Claude и другими LLM. Внедряем ИИ для автоматизации поддержки, аналитики и персонализации. Работаем с существующими проектами и новыми разработками. Работаем по всей России.',
-      q4: 'Работаете ли вы по всей России?',
-      a4: 'Да. Мы работаем с клиентами по всей России удалённо. Консультации, разработка и поддержка — онлайн. Связь через Telegram, видеозвонки и общие чаты. NDA по запросу.',
+      q4: 'Работаете ли вы в Москве и Московской области?',
+      a4: 'Да. Ведем проекты для бизнеса из Москвы и Подмосковья: от лендингов и корпоративных сайтов до SEO и AI-интеграций. Возможна полностью удаленная работа и регулярные созвоны.',
     },
     workflow: {
       tag: 'Процесс',
@@ -211,8 +212,8 @@ const TRANSLATIONS = {
   },
   en: {
     meta: {
-      description: 'WebK — website development, mobile apps, and SEO. We turn ideas into digital products.',
-      title: 'WebK — Web Development, Apps & SEO',
+      description: 'WebK provides website development, SEO, and AI integration for businesses in Moscow and the Moscow Region.',
+      title: 'Website Development in Moscow & Region | WebK',
     },
     nav: {
       services: 'Services',
@@ -228,6 +229,7 @@ const TRANSLATIONS = {
       titleHighlight: 'digital products',
       titleAfter: ' that work for your business',
       subtitle: 'Website development, mobile apps, and SEO. Full-cycle approach from idea to result.',
+      geoSubtitle: 'We work with businesses in Moscow and the Moscow Region: from concept to first qualified leads.',
       ctaPrimary: 'Leave a request',
       ctaSecondary: 'Our services',
       statProjects: 'Projects',
@@ -278,8 +280,8 @@ const TRANSLATIONS = {
       a2: 'Landing page — from $400, corporate site — from $1,000, e-commerce — from $2,000. Exact cost depends on page count, design, and features. Free quote after discussing your needs.',
       q3: 'How to add AI integration to a project?',
       a3: 'We add chatbots, voice assistants, ChatGPT/Claude and other LLM integration. We implement AI for support automation, analytics, and personalization. We work with existing projects and new developments. Remote work worldwide.',
-      q4: 'Do you work across Russia?',
-      a4: 'Yes. We work with clients across Russia remotely. Consultations, development, and support — all online. Communication via Telegram, video calls, and shared channels. NDA available on request.',
+      q4: 'Do you work in Moscow and the Moscow Region?',
+      a4: 'Yes. We deliver projects for businesses in Moscow and the surrounding region: from landing pages and corporate websites to SEO and AI integrations.',
     },
     workflow: {
       tag: 'Process',
@@ -478,6 +480,8 @@ function applyTranslations(lang) {
   }
   const heroSubtitle = document.querySelector('.hero__subtitle');
   if (heroSubtitle) heroSubtitle.textContent = t.hero.subtitle;
+  const heroGeoSubtitle = document.querySelector('[data-i18n="hero.geoSubtitle"]');
+  if (heroGeoSubtitle) heroGeoSubtitle.textContent = t.hero.geoSubtitle;
   document.querySelectorAll('[data-i18n="hero.ctaPrimary"]').forEach(el => { el.textContent = t.hero.ctaPrimary; });
   document.querySelectorAll('[data-i18n="hero.ctaSecondary"]').forEach(el => { el.textContent = t.hero.ctaSecondary; });
   document.querySelectorAll('[data-i18n="hero.statProjects"]').forEach(el => { el.textContent = t.hero.statProjects; });
